@@ -1,8 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
-import { Ionicons } from "@expo/vector-icons";
-import { Entypo } from "@expo/vector-icons";
+import {
+  Ionicons,
+  MaterialCommunityIcons,
+  Entypo,
+  FontAwesome,
+} from "@expo/vector-icons";
 import Colors from "@/constants/Colors";
 
 const Layout = () => {
@@ -10,6 +14,7 @@ const Layout = () => {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors.primary,
+        tabBarInactiveTintColor: Colors.black,
       }}
     >
       <Tabs.Screen
@@ -17,16 +22,25 @@ const Layout = () => {
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color, size }) => (
-            <Entypo name="home" color={color} size={size} />
+            <MaterialCommunityIcons name="home" color={color} size={size} />
           ),
         }}
       />
       <Tabs.Screen
         name="topairing"
         options={{
-          tabBarLabel: "Top Airing Anime",
+          tabBarLabel: "Top Airing",
           tabBarIcon: ({ color, size }) => (
             <Entypo name="trophy" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="search"
+        options={{
+          tabBarLabel: "Explore",
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome name="search" color={color} size={size} />
           ),
         }}
       />
