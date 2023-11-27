@@ -29,6 +29,7 @@ const Layout = () => {
               size={30}
             />
           ),
+          headerTitleAlign: "center",
         }}
       />
       <Tabs.Screen
@@ -38,6 +39,7 @@ const Layout = () => {
           tabBarIcon: ({ color, size }) => (
             <AntDesign name="search1" color={color} size={25} />
           ),
+          headerTitleAlign: "center",
         }}
       />
       <Tabs.Screen
@@ -51,6 +53,7 @@ const Layout = () => {
               size={30}
             />
           ),
+          headerTitleAlign: "center",
         }}
       />
       <Tabs.Screen
@@ -60,6 +63,7 @@ const Layout = () => {
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="person-circle-outline" color={color} size={30} />
           ),
+          headerTitleAlign: "center",
         }}
       />
     </Tabs>
