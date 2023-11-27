@@ -6,6 +6,7 @@ import {
   MaterialCommunityIcons,
   Entypo,
   FontAwesome,
+  AntDesign,
 } from "@expo/vector-icons";
 import Colors from "@/constants/Colors";
 
@@ -14,7 +15,7 @@ const Layout = () => {
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors.primary,
-        tabBarInactiveTintColor: Colors.black,
+        tabBarInactiveTintColor: Colors.grey,
       }}
     >
       <Tabs.Screen
@@ -22,7 +23,11 @@ const Layout = () => {
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="home" color={color} size={size} />
+            <MaterialCommunityIcons
+              name="television-classic"
+              color={color}
+              size={30}
+            />
           ),
         }}
       />
@@ -31,7 +36,7 @@ const Layout = () => {
         options={{
           tabBarLabel: "Search Anime",
           tabBarIcon: ({ color, size }) => (
-            <FontAwesome name="search" color={color} size={size} />
+            <AntDesign name="search1" color={color} size={25} />
           ),
         }}
       />
@@ -40,7 +45,11 @@ const Layout = () => {
         options={{
           tabBarLabel: "Top Airing",
           tabBarIcon: ({ color, size }) => (
-            <Entypo name="trophy" color={color} size={size} />
+            <MaterialCommunityIcons
+              name="trophy-award"
+              color={color}
+              size={30}
+            />
           ),
         }}
       />
