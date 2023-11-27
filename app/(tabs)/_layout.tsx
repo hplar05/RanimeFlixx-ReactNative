@@ -27,6 +27,15 @@ const Layout = () => {
         }}
       />
       <Tabs.Screen
+        name="search"
+        options={{
+          tabBarLabel: "Search Anime",
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome name="search" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="topairing"
         options={{
           tabBarLabel: "Top Airing",
@@ -36,20 +45,11 @@ const Layout = () => {
         }}
       />
       <Tabs.Screen
-        name="search"
-        options={{
-          tabBarLabel: "Explore",
-          tabBarIcon: ({ color, size }) => (
-            <FontAwesome name="search" color={color} size={size} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="profile"
         options={{
           tabBarLabel: "Profile",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person" color={color} size={size} />
+            <Ionicons name="person-circle-outline" color={color} size={30} />
           ),
         }}
       />
