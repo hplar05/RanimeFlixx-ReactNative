@@ -50,6 +50,19 @@ const login = () => {
           />
           <Text style={styles.btnOutlineText}>Continue with Phone</Text>
         </TouchableOpacity>
+
+        <TouchableOpacity style={styles.btnOutline}>
+          <Ionicons
+            name="md-logo-facebook"
+            style={defaultStyles.btnIcon}
+            size={24}
+          />
+          <Text style={styles.btnOutlineText}>Continue with Facebook</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.btnOutline}>
+          <FontAwesome5 name="tiktok" style={defaultStyles.btnIcon} size={24} />
+          <Text style={styles.btnOutlineText}>Continue with Tiktok</Text>
+        </TouchableOpacity>
         <TouchableOpacity style={styles.btnOutline}>
           <Ionicons
             name="md-logo-apple"
@@ -68,15 +81,11 @@ const login = () => {
         </TouchableOpacity>
         <TouchableOpacity style={styles.btnOutline}>
           <Ionicons
-            name="md-logo-facebook"
+            name="md-logo-github"
             style={defaultStyles.btnIcon}
             size={24}
           />
-          <Text style={styles.btnOutlineText}>Continue with Facebook</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.btnOutline}>
-          <FontAwesome5 name="tiktok" style={defaultStyles.btnIcon} size={24} />
-          <Text style={styles.btnOutlineText}>Continue with Tiktok</Text>
+          <Text style={styles.btnOutlineText}>Continue with Github</Text>
         </TouchableOpacity>
       </View>
     </View>
