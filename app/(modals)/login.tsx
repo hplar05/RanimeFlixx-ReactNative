@@ -47,6 +47,8 @@ const login = () => {
 
       if (createdSessionId) {
         setActive!({ session: createdSessionId });
+        router.back();
+        router.back();
       }
     } catch (err) {
       console.error(`OAtuh error: ${err}`);
